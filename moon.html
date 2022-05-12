@@ -1,0 +1,57 @@
+<!doctype html>
+<html>
+
+<head>
+    <title> Moon Light Page </title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+
+<body>
+    <section>
+        <img src="./image/back.jpg" id="back">
+        <img src="./image/moon.png" id="moon">
+        <img src="./image/mountain.png" id="mountain">
+        <img src="./image/road.png" id="road">
+        <h2 id="text">Travel Life </h2>
+
+    </section>
+    <script type="text/javascript">
+        let back = document.getElementById("back");
+        let moon = document.getElementById("moon");
+        let mountain = document.getElementById("mountain");
+        let road = document.getElementById("road");
+        let text = document.getElementById("text");
+
+        window.addEventListener('scroll', function() {
+            var value = window.scrollY;
+            console.log(value);
+
+            back.style.top = value * 0.5 + 'px';
+            moon.style.left = -value * 0.5 + 'px';
+            mountain.style.top = -value * 0.15 + 'px';
+            road.style.top = value * 0.15 + 'px';
+            text.style.top = value * 1 + 'px';
+
+        })
+    </script>
+    <div class="st">
+        <h2 style="color: white;">Travelling at night alone</h2><br>
+        <p style="position:relative;padding: 10px;color: white">Travelling alone in daylight is also a thing — which is mostly noisy and busy and tiring. Maybe it’s just that I do that so much that’s given me the appreciation for the quieter night time hours but there is something deeply silent and magical
+            about the moment at 3am when all the world is dozing around you. A little of it is the apocalyptic fantasy — that all your problems suddenly disappear because the world is disrupted but nowhere near that aggressive, it’s just that no one else
+            is awake. People tend to sleep on night planes and buses — and I do, a bit but there’s an intense pleasure to being awake, surrounded by the peacefulness of slumber. Which is absolutely me romanticising it because in reality, the long hours
+            of realising how badly your leg is in pain from the cramped seat, that you can’t move enough to relieve the pressure on a spine that’s had all your luggage on it for several sweaty miles before you got on here.<br><span> None of that is actually pleasant.
+            But the almost suffocating drowsy heat of a cabin, surrounded by people you’re very unlikely to see ever again, is a peculiar sort of isolation. It doesn’t feel despairing — you’re in transit, a thing is occurring and you’ve played your part
+            in ensuring that by getting on it. Because I’m old, the almost nausea-wave tiredness of true exhaustion, head swimming in the drowning pool of sleep, makes me think of the Manics — I’m running on loneliness — but with that as no bad thing.
+            For the anxiously overworked, those moments of full privacy — from intrusive thoughts about work, from the pressure of deadlines, from the nagging feeling you should be doing something - are very rare. To have time to seriously think, for
+            anyone, is even moreso.</span></p>
+        <div class="img">
+            <img src="image/t2.jpg">
+        </div>
+    </div>
+    <div class="st2">
+
+    </div>
+</body>
+
+</html>
